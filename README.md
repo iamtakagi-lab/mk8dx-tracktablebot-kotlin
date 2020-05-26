@@ -1,2 +1,2 @@
 # mk8dx-tracktablebot
-画像はMKB提供
+トラック画像はMKB提供
