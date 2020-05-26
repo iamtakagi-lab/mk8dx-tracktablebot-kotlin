@@ -13,11 +13,11 @@ class TrackService {
             "dhc", "diio", "dmc", "dnbc",
             "drir", "drr", "dsbs", "dwgm",
             "dww", "ed", "mc", "mks",
-            "mw", "ps", "rccb", "rddd",
+            "mw", "ds", "rccb", "rddd",
             "rdkj", "rdp3", "rgv", "rmc",
             "rmmm", "rmp", "rpps", "rr",
             "rrrd", "rrry", "rsl", "rtt",
-            "rttc", "rws", "dyc", "ryv",
+            "rttc", "rws", "ryc", "ryv",
             "sa", "sgf", "ssc", "th",
             "tm", "tr", "wp")
 
