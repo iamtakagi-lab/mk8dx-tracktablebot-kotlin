@@ -61,7 +61,7 @@ class GuildlistCommand(waiter: EventWaiter?) : Command() {
     }
 
     init {
-        name = "guildlist"
+        name = "ttguildlist"
         help = "shows the list of guilds the bot is on"
         arguments = "[pagenum]"
         botPermissions = arrayOf(
