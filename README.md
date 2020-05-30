@@ -11,6 +11,6 @@ _ttbot
 
 # Usage
 
-![](blob:https://imgur.com/d101edd3-62e3-4bed-858b-775acb652af7)
+![](https://i.imgur.com/5QA5jPt.png)
 
 Powered by http://japan-mk.blog.jp/mk8dx.info-4
