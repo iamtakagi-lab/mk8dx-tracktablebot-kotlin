@@ -1,6 +1,9 @@
 # mk8dx-tracktablebot
+Donate: https://riptakagi.fanbox.cc
 
 https://discord.com/api/oauth2/authorize?client_id=714641356600901736&permissions=35840&scope=bot
+
+![](https://i.imgur.com/eMlnfRr.png)
 
 # Commands
 
@@ -10,6 +13,6 @@ _ttbot
 
 # Usage
 
-![](https://i.imgur.com/SD2Vihf.png)
+![](https://i.imgur.com/5QA5jPt.png)
 
 Powered by http://japan-mk.blog.jp/mk8dx.info-4
