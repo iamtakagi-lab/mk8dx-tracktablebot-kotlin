@@ -44,7 +44,7 @@ class GuildlistCommand(waiter: EventWaiter?) : Command() {
         }
         pbuilder.clearItems()
         event.jda.guilds.stream()
-            .map { g: Guild -> "**" + g.name + "** (ID:" + g.id + ") ~ " + g.members.size + " Members" }
+            .map { g: Guild -> "**" + g.name + "** (ID:" + g.id + ") ~ " + g.members.size + " Members"}
             .forEach { items: String? -> pbuilder.addItems(items) }
         val p = pbuilder.setColor(
             if (event.isFromType(ChannelType.TEXT)) event.selfMember.color else Color.black
@@ -64,6 +64,7 @@ class GuildlistCommand(waiter: EventWaiter?) : Command() {
         name = "ttguildlist"
         help = "shows the list of guilds the bot is on"
         arguments = "[pagenum]"
+        hidden = true
         botPermissions = arrayOf(
             Permission.MESSAGE_EMBED_LINKS,
             Permission.MESSAGE_ADD_REACTION
