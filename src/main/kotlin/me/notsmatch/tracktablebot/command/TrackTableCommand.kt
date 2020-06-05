@@ -44,7 +44,7 @@ class TrackTableCommand(val trackService: TrackService) : Command() {
                 }.build())
             }
 
-            channel.sendFile(trackService.getTrackFile(args[0])).queue()
+            channel.sendMessage(TrackService.TRACKS[args[0]] ?: error("")).queue()
         }
     }
 }

@@ -1,0 +1,1 @@
+worker: java -jar build/libs/mk8dx-tracktablebot-1.0.2-SNAPSHOT.jar

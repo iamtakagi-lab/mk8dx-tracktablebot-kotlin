@@ -13,7 +13,7 @@ class TrackListCommand(val trackService: TrackService) : Command() {
 
     override fun execute(event: CommandEvent?) {
         event?.apply {
-            channel.sendFile(TrackService.TRACK_LIST_FILE).queue()
+            channel.sendMessage(TrackService.TRACK_LIST_FILE).queue()
         }
     }
 }

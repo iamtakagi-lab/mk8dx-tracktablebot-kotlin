@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
 Implementation-Title: mk8dx-tracktablebot
-Implementation-Version: 1.0-SNAPSHOT
+Implementation-Version: 1.0.2-SNAPSHOT
 Main-Class: me.notsmatch.tracktablebot.Main
 

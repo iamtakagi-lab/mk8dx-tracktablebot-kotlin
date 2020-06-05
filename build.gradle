@@ -7,7 +7,7 @@ apply plugin: 'kotlin'
 apply plugin: 'application'
 
 group 'me.notsmatch.tracktablebot'
-version '1.0-SNAPSHOT'
+version '1.0.2-SNAPSHOT'
 mainClassName = "me.notsmatch.tracktablebot.Main"
 
 sourceCompatibility = 1.8
