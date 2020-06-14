@@ -2,12 +2,12 @@
 
 https://discord.com/api/oauth2/authorize?client_id=714641356600901736&permissions=35840&scope=bot
 
+![](https://i.imgur.com/eMlnfRr.png)
+
 ## Donate
 https://riptakagi.fanbox.cc
 * Minami
 * とーふ。/Louix 
-
-![](https://i.imgur.com/eMlnfRr.png)
 
 # Commands
 
