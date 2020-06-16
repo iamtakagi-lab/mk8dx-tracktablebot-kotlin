@@ -7,6 +7,7 @@ import net.dv8tion.jda.api.EmbedBuilder
 import org.apache.commons.lang3.StringUtils
 import java.awt.Color
 import java.io.File
+import java.net.URI
 
 class TrackTableCommand(val trackService: TrackService) : Command() {
 
@@ -32,7 +33,9 @@ class TrackTableCommand(val trackService: TrackService) : Command() {
                 }.build())
             }
 
-            if(!trackService.isExists(args[0])){
+            val trackName = args[0].toLowerCase()
+
+            if(!trackService.isExists(trackName)){
                 return reply(EmbedBuilder().apply {
                     setColor(Color.RED)
                     setAuthor(
@@ -44,7 +47,8 @@ class TrackTableCommand(val trackService: TrackService) : Command() {
                 }.build())
             }
 
-            channel.sendMessage(TrackService.TRACKS[args[0]] ?: error("")).queue()
+            val image = TrackService.TRACKS[trackName] ?:return
+            channel.sendMessage(image).complete()
         }
     }
 }
