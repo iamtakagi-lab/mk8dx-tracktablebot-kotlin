@@ -26,15 +26,17 @@ class Bot (private val token: String) {
 
     val trackService = TrackService()
     val eventWaiter = EventWaiter()
+    val WEBSITE = System.getenv("WEBSITE")
+
     fun start() {
         instance = this
         jda = JDABuilder(AccountType.BOT).setToken(token).setStatus(OnlineStatus.ONLINE).build()
         val builder = CommandClientBuilder()
         builder.addCommands(
             TrackTableCommand(trackService),
-            TrackListCommand(trackService),
+            TrackListCommand(),
             GuildlistCommand(eventWaiter),
-            AboutCommand(Color.GREEN, "https://github.com/notsmatch/mk8dx-tracktablebot", Permission.VIEW_CHANNEL, Permission.MESSAGE_WRITE, Permission.MESSAGE_READ, Permission.MESSAGE_ATTACH_FILES,  Permission.MESSAGE_ADD_REACTION)
+            AboutCommand(Color.GREEN, "https://github.com/riptakagi/mk8dx-tracktablebot", Permission.VIEW_CHANNEL, Permission.MESSAGE_WRITE, Permission.MESSAGE_READ, Permission.MESSAGE_ATTACH_FILES,  Permission.MESSAGE_ADD_REACTION)
         )
 
         builder.setOwnerId("695218967173922866")
@@ -57,7 +59,7 @@ class Listener : ListenerAdapter() {
         timer.schedule(object : TimerTask() {
             override fun run() {
                 event.jda.apply {
-                    presence.setPresence(OnlineStatus.ONLINE, Activity.watching("_ttbotabout | ${guilds.size} servers"))
+                    presence.setPresence(OnlineStatus.ONLINE, Activity.watching("${Bot.instance.WEBSITE} | ${guilds.size} servers"))
                 }
             }
         }, 0, 1000*300)
