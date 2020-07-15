@@ -4,11 +4,6 @@ https://discord.com/api/oauth2/authorize?client_id=714641356600901736&permission
 
 ![](https://i.imgur.com/eMlnfRr.png)
 
-## Donate
-https://riptakagi.fanbox.cc
-* Minami
-* とーふ。/Louix 
-
 # Commands
 
 _ttbot
@@ -20,3 +15,5 @@ _ttbot
 ![](https://i.imgur.com/5QA5jPt.png)
 
 Powered by http://japan-mk.blog.jp/mk8dx.info-4
+
+https://riptakagi.fanbox.cc
